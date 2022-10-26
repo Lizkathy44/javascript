@@ -31,3 +31,10 @@ if (password.length >=6 && password.indexOf(' ')=== -1);
     else{
         console.log(`you need pay ksh.${50} to eat`);
     }
+
+    // ternary operator
+
+    let javascript = `hard`;
+
+    if (javascript ===`easy`)?k `okay`: `not true`;
+    console.log(javascript);i0
