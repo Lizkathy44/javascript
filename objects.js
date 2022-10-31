@@ -1,5 +1,6 @@
 // CREATING OBJECTS
 // NOTE: all keys in an are converted to strings behind the scenes
+// in arrays we use index while in objects we use custom keys
 
 const fitBitData = {
     totalSteps: 308727,

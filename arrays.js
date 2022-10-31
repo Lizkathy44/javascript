@@ -1,11 +1,25 @@
+// creating arrays
+let students = []
+students[0]='femidevs'
+    console.log(students);
+
+    // arrays can apply on strings
 let colors = [`red`, `orange`, `yellow`];
 console.log(colors);
  
+// can also apply on numbers
 let lottoNums = [19,22,56,12,51];
 console.log(lottoNums);
 
+// can also apply on mixed values i.e strings,numbers,booleans,null,undefined etc
 let stuff = [true, 68, 'cat', null];
 console.log(stuff);
+
+let mixed = ['joy', 54, false, null,undefined]
+ console.log(mixed);
+
+ mixed.push("Kenya");
+ 
 
 let fruits = ['oranges','apples',20, false,undefined];
 console.log(fruits);
@@ -40,7 +54,7 @@ console.log(reversed);
 //  SPLICE-remove/replace elements
 let splicer = ['orange', 'apples','watermelon','mangoes','guava'];
 
-// REMOVING AN ITEM USIND SPLICE
+// REMOVING AN ITEM USING SPLICE
 // splicer.splice(2,1);
 splicer.splice(2,2);
 
@@ -111,6 +125,7 @@ const newlyConcatenated = age.concat(city).concat(isAdmin).concat(zip);
 console.log(newlyConcatenated);
 
 // key is variable together with its value
+
 
 
 
