@@ -1,11 +1,11 @@
-// functiojn is two step function
+// function is two step function
 // define
 //syntax 
 // function funcName(){
 //     //do something
 // }
 function grumpus(){
-    console.log(' uh..you again...');
+    console.log(' ugh..you again...');
     console.log( 'for the last time..');
     console.log|( 'leave me alone!!!');
 }
@@ -66,13 +66,147 @@ function greet(world){
     console.log(`hello ${world}`.toUpperCase());
 };
 
-let arr1 = [15,20,25,30,50];
-console.log(arr1);
-let arr2 = [10,22,28,34,46];
-console.log(arr2);
 function avg(arr){
-        
+      let sum = 0;
+    for(let r of arr){
+        sum += r;
+        console.log(sum);
+    }
+    const average = sum / arr.length;
+    console.log(average);
+}
+avg([1,2,3,4,5]);
+avg([5,10,15,20,25]);
+avg([12,20,30,20,68]);
+
+
+function findLargest (x,y){
+    if (x>y){
+    console.log(`${x} is larger!`);
+    }
+    else if(x<y){
+    console.log(`${y}is larger1`);
+    }
+    else{
+        console.log(`${x} and ${y} are equal!`);
+    }
+}
+findLargest(6,9);
+findLargest(2,2);
+
+function add(x,y){
+    return x+y; //returning only 1 value
+}
+const total = add(2,3);
+console.log(total);
+// return [x,y] returns multiple values
+
+function isPurple(color){
+    if (color =='purple'){
+        return true;
+    }
+    else{
+        return false
+    }
 };
+const colorr = isPurple('purple'); //declaring a new variable to store value
+console.log(colorr);
+
+//write a isValidPassword
+//it accepts 2 parameters: password and username
+//password must:
+//  -be atleast 8 characters
+//   -cannot contain spaces
+//   -cannot contain username
+//if all requirements are met return true
+//otherwise false
+
+function isValidPassword(password, username){
+    if (password.length <8){
+        return false
+    }
+    if (password.indexOf(' ') !== -1){//user1   //user1password
+        return false
+    }
+    if( password.indexOf(username) !== -1){
+        return false
+    }
+    else{
+        return true
+    }
+
+};
+const nPassword = isValidPassword('kathy123','liz');
+console.log(nPassword);
+
+//METHOD 2 USING OR
+// function isValidPassword(password, username){
+//     if (password.length <8 ||
+//         password.indexOf(' ') !== -1||  //user1   //user1password 
+//         password.indexOf(username) !== -1)
+//        { 
+//         return false
+//        }
+//     else{
+//         return true
+//     }
+
+// };
+// const fPassword = isValidPassword('eliza123','kathy');
+// console.log(fPassword);
+
+// //METHOD 3
+// function isValidPassword(password, username){
+//     const tooShort = password.length < 8;
+//     const hasSpace = password.indexOf('') !== -1;
+//     const containsUsername = password.indexOf(username) !== -1
+
+//apply a condition
+// if(tooShort || hasSpace || containsUsername) return false
+// return true;
+// }; 
+// const fPassword = isValidPassword('eliza123','kathy)
+// if(!tooShort && !hasSpace && !containsUsername) return true;
+// return false;
+
+// //even simpler method
+// return !tooShort && !hasSpace && !containsUsername;)
+// console.log(fPassword);
+
+//METHOD 4
+
+// a pangram is a sentence that contains every letter of the alphabet
+//'The quick brown fox jumps over the lazy dog'
+//write a function called isPangram, which checks to see if a given sentence contains every letter of the alphabet
+//make sure you ignore string casing!
+
+// function isPangram(sentence){
+//     let lowerCased = sentence.toLowerCase();
+//     for (let char of 'abcdefghijklmnopqrstuvwxyz'){
+//         if (lowerCased.indexOf(char) ===-1){
+//             return false;
+//         }
+//     }
+//     return true
+// }
+// const panGram = isPangram('Pack my box with five dozen liquor jugs');
+// console.log(panGram);
+
+//How quickly daft jumping zebras vex, Pack my box with five dozen liquor jugs, The quick brown fox jumps over the lazy dog
+
+function isPangram(sentence){
+    let lowerCased = sentence.toLowerCase();
+    for (let char of 'abcdefghijklmnopqrstuvwxyz'){
+        if (!lowerCased.includes(char)){
+            return false;
+        }
+    }
+    return true
+}
+const panGram = isPangram('How uickly daft jumping zebras vex');
+console.log(panGram);
 
 
    
+
+
