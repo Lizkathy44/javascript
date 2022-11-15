@@ -207,6 +207,55 @@ const panGram = isPangram('How uickly daft jumping zebras vex');
 console.log(panGram);
 
 
+let bird = 'mandarin duck'
+function birdWatch(){
+    let bird = 'golden pheasant';
+    console.log(bird) //golden pheasant;
+};
+console.log(bird)       //bird is scoped to birdWatch function
+birdWatch();
+
+//High Order functions
+function callTwice (func){
+    func();
+    func();
+};
+function laugh(){
+    console.log('KICHEKOOOOOO');
+};
+callTwice(laugh);
+
+
+
+function makeBetweenFunc (min, max){
+    return function(val){
+        return val >=min && val <=max;
+    }
+}
+const inAgeRange = makeBetweenFunc(18, 100);
+
+      inAgeRange(17);
+      inAgeRange(68);
+
+      console.log(inAgeRange(17));
+      console.log(inAgeRange(68));
+
+   //Callback functions is a function passed into another function as an argument, which is then invoked inside the outer function.
+
    
+
+   //automatically repeat function a certain number of times
+   function rage(){
+console.log("I LOVE MYSELF");
+   };
+   function repeatNTimes (action,num){
+    for(let i = 0; i<num; i++){
+        action();
+    }
+   }
+
+   repeatNTimes(rage, 5);
+
+
 
 
