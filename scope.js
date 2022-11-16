@@ -15,6 +15,9 @@ if(radius > 0){
     let circ = 2 * PI * radius;
     console.log(circ)
 };
+    console.log(radius);  //8
+    console.log(PI);
+    console.log(circ);
 
 //Lexical scope- refers to the fact that nested functions are bound to their parent functions. They are only available in their parent function.
 function outer(){
@@ -34,7 +37,17 @@ function outer(){
 }
 outer();
 
-//EXPRESSIONS
+// FUNCTIONS DECLARATION
+//syntax
+// function funcName(){
+//     //something
+// };
+
+//FUNCTIONS EXPRESSIONS
+//syntax 
+//const square = function (){
+    // return;
+// };
     const square = function (num){
     return num * num;
 };

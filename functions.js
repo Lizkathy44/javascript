@@ -256,6 +256,42 @@ console.log("I LOVE MYSELF");
 
    repeatNTimes(rage, 5);
 
+//Reasons why we store functions in variables
+//1. In JavaScript, functions are objects
+//-this means we can  put them in a variable
+//-we can store alot of them in an array
+//- we can pass them around as arguments
+//use console.dir in the browser to prove that functions are objects
+
+function add(x,y){
+    return x + y;
+};
+
+function substract(x,y){
+    return x - y;
+};
+
+function multiply(x,y){
+    return x * y;
+};
+
+function divide(x,y){
+    return x / y;
+};
+
+const learner = {
+    math: add,
+    
+};
+// console.log(student);
+console.log(learner.math(25,65));
+
+const studnt = [add,substract, multiply, divide];
+
+for (let name of studnt){
+    let students= name(25,10)
+        console.log(students);   
+};
 
 
 

@@ -1,5 +1,5 @@
 // creating arrays
-let students = []
+let students = [];
 students[0]='femidevs'
     console.log(students);
 
@@ -19,7 +19,7 @@ let mixed = ['joy', 54, false, null,undefined]
  console.log(mixed);
 
  mixed.push("Kenya");
- 
+ console.log()
 
 let fruits = ['oranges','apples',20, false,undefined];
 console.log(fruits);
@@ -51,7 +51,7 @@ console.log(reversed);
  let sliced = newItems.slice(1,4);
  console.log(sliced);
 
-//  SPLICE-remove/replace elements
+//  SPLICE-removes or replace elements
 let splicer = ['orange', 'apples','watermelon','mangoes','guava'];
 
 // REMOVING AN ITEM USING SPLICE
@@ -125,7 +125,7 @@ const newlyConcatenated = age.concat(city).concat(isAdmin).concat(zip);
 console.log(newlyConcatenated);
 
 // key is variable together with its value
-
+//NOTE: mostly in arrays and objects we use const and NOT let because the values are not directly stored to the....visit slack notes
 
 
 
